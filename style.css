@@ -1,0 +1,1274 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Electro header .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1E1F29;
+    padding-block: 10px;
+    font-size: 12px;
+    padding-left: 15px;
+    border-bottom: 0px solid white;
+}
+.Electro header .info .r-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 15px;
+}
+.Electro header .info a{
+    color: white;
+}
+.Electro header .info a .icon{
+    margin-right: 5px;
+    color: #d10024;
+    font-size: 12px;
+}
+.Electro header .info a:hover .icon{
+    transform: translateY(-3px);
+    transition: transform 0.5s ease-in;
+}
+.Electro header .info .l-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 15px;
+    padding-block: 10px;
+    padding-right: 20px;
+}
+
+.Electro .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px 25px;
+    background-color: #15161D;
+    border-bottom: 3px solid #d10024;
+}
+.Electro .logo h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Electro .logo h1 span{
+    color: #d10024;
+}
+.Electro .logo .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Electro .logo form #Select{
+    height: 40px;
+    min-width: 150px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px;
+    cursor: pointer;
+    padding-left: 18px;
+    font-size: 16px;
+    color: #15161db7;
+    position: relative;
+    left: 4px;
+}
+.Electro .logo form input{
+    border-left: 1px solid white;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    left: 1px;
+    bottom: 1px;
+    padding-left: 10px;
+}
+.Electro .logo form button{
+    height: 40px;
+    min-width: 100px;
+    position: relative;
+    left: -2px;
+    background-color: #d10024;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius:25px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.Electro .logo .your{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.Electro .logo .your a{
+    color: white;
+    text-align: center;
+}
+.Electro .logo .your p{
+    font-size: 13px;
+}
+.Electro .logo .your .wish{
+    background-color: #d10024;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    left: 44px;
+    top: 8px;
+}
+.Electro .logo .your .cart{
+    background-color: #d10024;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    left: 35px;
+    top: 6px;
+}
+.Electro .logo .your .menu{
+    color: white;
+    text-align: center;
+    margin-left: 24px;
+    margin-top: 20px;
+}
+.Electro .logo .your .heart{
+    font-size: 20px;
+}
+.Electro .nav-links{
+    width: 0;
+    height: 100%;
+    background-color: #15161D;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 99;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 70px;
+}
+.Electro .nav-links a{
+    color: white;
+    margin-inline: 12px;
+}
+.Electro .nav-links a.active {
+    color: #d10024;
+    border-bottom: 2px solid #d10024;
+}
+.Electro .nav-links a:hover{
+    border-bottom: 2px solid #d10024;
+    color: #d10024;
+}
+.Electro header .nav-links .closebtn{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    font-size: 36px;
+}
+.fullscreen{
+    display: none;
+}
+
+.cards{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+.cards .collect{
+    height: 250px;
+    width: 360px;
+    position: relative;    
+}
+.cards .collect img{
+    height: 250px;
+    width: 360px;
+    margin-top: 0;
+    position: absolute;
+    scale: 1.0;
+}
+.cards .collect:hover img{
+    scale: 1.02;
+    margin-top: 2px;
+    transition: all 0.3s linear;
+}
+.cards .collect .shop{
+    background-color: #d10023ec;
+    color: white;
+    height: 250px;
+    width: 380px;
+    clip-path: polygon(0px 350px, 0px 0px, 350px 0px,340px 0px);
+}
+.cards .collect .shop h2{
+    padding: 30px 0 0 30px;
+    font-size: 25px;
+}
+.cards .collect .shop p{
+    padding: 15px 30px;
+}
+.cards .collect .shop p a{
+    color: white;
+}
+
+
+.new{
+    margin-top: 100px;
+    margin-inline: 15px;
+}
+.new h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.new .p-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    margin-block: 20px 50px;
+}
+.new .p-items a{
+    color: gray;
+    font-weight: 700;
+}
+.new .p-items a .active{
+    color: #d10024;
+}
+.new .p-items a:hover{
+    border-bottom: 2px solid red;
+}
+.slideshow-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.new .box{
+    width: 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    text-align: center;
+}
+.new .box.active{
+    opacity: 1;
+}
+.new .box:hover{
+    border-bottom: none;
+    border-top: 2px solid #d10024;
+    border-left: 2px solid #d10024;
+    border-right: 2px solid #d10024;
+}
+.new .box .discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.new .box .discount p{
+    padding: 5px;
+    border: 2px solid #d10024;
+    color: #d10024;
+}
+.new .box img{
+    height: 300px;
+    margin-block: 30px;
+}
+.new .box .category{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+.new .box .category h4{
+    color: rgba(128, 128, 128, 0.705);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 100;
+}
+.new .box .category h3{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.new .box .category p{
+    color: #d10024;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.new .box .category p span{
+    color: gray;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.new .box .category .rating{
+    position: absolute;
+    left: 38%;
+    top: 95px;
+    font-size: 20px;
+}
+.new .box .react{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 70px;
+    margin-top: 5px;
+    border-bottom: 2px solid #d10024;
+}
+.new .slideshow-container .box .buy{
+    display: none;
+    height: 0;
+}
+.new .slideshow-container .box .buy button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    background-color: #d10024;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+.new .slideshow-container .box .buy button:hover{
+    color: #d10024;
+    background-color: white;
+    border: 2px solid #d10024;
+}
+.new .slideshow-container .box .buy button .buy-icon{
+    display: none;
+}
+.new .slideshow-container .box .buy button:hover .buy-icon{
+    display: contents;
+    transition: all 1s ease-in;
+}
+.new .slideshow-container .box .buy button p{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.new .slideshow-container:hover .buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #15161D;
+    margin-inline: 5px;
+    height: 70px;
+}
+
+
+.hot{
+    margin-top: 680px;
+    background-color: #80808033;
+    text-align: center;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hot .times{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 5%;
+    justify-content: center;
+    gap: 20px;
+}
+.hot .times .time{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d10024;
+    color: rgba(255, 255, 255, 0.774);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hot .times .time h3{
+    font-size: 30px;
+}
+.hot .times .time p{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+.hot .deal h2{
+    color: #15161D;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.hot .deal p{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-block: 15px 30px;
+    color: #15161d94;
+}
+.hot .deal button{
+    background-color: #d10024;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    border: 2px solid #d10024;
+}
+.hot .deal button:hover{
+    color: #d10024;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.8s ease-in-out;
+}
+
+.selling{
+    margin-top: 50px;
+    padding-inline: 15px;
+}
+.selling h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #15161dda;
+}
+.selling .p-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    margin-block: 20px 50px;
+}
+.selling .p-items a{
+    color: gray;
+    font-weight: 700;
+    
+}
+.selling .p-items a:hover{
+    border-bottom: 2px solid red;
+}
+.selling .slideshow-containers{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.selling .box{
+    width: 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    text-align: center;
+}
+.selling .box.active{
+    opacity: 1;
+}
+.selling .box:hover{
+    border-bottom: none;
+    border-top: 2px solid #d10024;
+    border-left: 2px solid #d10024;
+    border-right: 2px solid #d10024;
+}
+.selling .box .discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.selling .box .discount p{
+    padding: 5px;
+    border: 2px solid #d10024;
+    color: #d10024;
+}
+.selling .box img{
+    height: 300px;
+    margin-block: 30px;
+}
+.selling .box .category{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+.selling .box .category h4{
+    color: rgba(128, 128, 128, 0.705);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 100;
+}
+.selling .box .category h3{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.selling .box .category p{
+    color: #d10024;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.selling .box .category p span{
+    color: gray;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.selling .box .category .rating{
+    position: absolute;
+    left: 38%;
+    top: 95px;
+    font-size: 20px;
+}
+.selling .box .react{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 70px;
+    margin-top: 5px;
+    border-bottom: 2px solid #d10024;
+}
+.selling .slideshow-containers .box .buy{
+    display: none;
+    height: 0;
+}
+.selling .slideshow-containers .box .buy button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    background-color: #d10024;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+.selling .slideshow-containers .box .buy button:hover{
+    color: #d10024;
+    background-color: white;
+    border: 2px solid #d10024;
+}
+.selling .slideshow-containers .box .buy button .buy-icon{
+    display: none;
+}
+.selling .slideshow-containers .box .buy button:hover .buy-icon{
+    display: block;
+    transition: all 1s ease-in;
+}
+.selling .slideshow-containers .box .buy button p{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.selling .slideshow-containers:hover .buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #15161D;
+    margin-inline: 5px;
+    height: 70px;
+}
+
+
+.top{
+    opacity: 0.94;
+    margin-top: 680px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-inline: 15px;
+    text-transform: uppercase;
+}
+.top .mini{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top .mini h3{
+    color: #15161D;
+    font-weight: 800;
+    font-size: 18px;
+}
+.top .mini li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.top .mini li img{
+    width: 80px;
+}
+.top .mini li div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.top .mini li div h5{
+    color: #15161d7e;
+    font-size: 11px;
+}
+.top .mini li div h4{
+    font-size: 12px;
+    color: #000000dc;
+    font-weight: 800;
+    
+}
+.top .mini li div p{
+    color: #d10024;
+    font-weight: 800;
+}
+.top .mini li div p span{
+    font-weight: 100;
+    font-size: 12px;
+    color: black;
+    text-decoration: line-through;
+}
+
+
+.newsletter{
+    border-top: 3px solid rgba(128, 128, 128, 0.212);
+    margin-top: 100px;
+    padding-top: 40px;
+    position: relative;
+}
+.newsletter nav .fa-envelope{
+    font-size: 190px;
+    rotate: 20deg;
+    color: rgba(128, 128, 128, 0.288);
+    position: absolute;
+    left: -80px;
+    top: 45px;
+    z-index: -88;
+}
+.newsletter h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 100;
+    color: #15161dbb;
+}
+.newsletter h3 span{
+    color: #15161D;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.newsletter form{
+    margin-block: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.newsletter form input{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius:30px;
+    font-size: 16px;
+    padding-left: 20px;
+    height: 40px;
+    width: 190px;
+    border: 2px solid red;
+
+}
+.newsletter form button{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    font-size: 14px;
+    font-weight: 800;
+}
+.newsletter form button .fa-envelope{
+    margin-right: 5px;
+}
+.newsletter .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 40px;
+}
+.newsletter .social .icon{
+    width: 14px;
+    height: 14px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.575);
+} 
+.newsletter .social .icon:hover{
+    color: red;
+    border-radius: 50%;
+    border: 1px solid red;
+    transition: all 0.5s ease-in-out;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #15161D;
+    border-top: 2px solid #d10024;
+    border-bottom: 2px solid white;
+    border-inline: 1px solid rgba(255, 255, 255, 0.329);
+    padding-inline: 20px;
+}
+footer .upper{
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+footer .upper h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+footer .upper .first p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.562);
+}
+footer .upper .first .info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .upper .first .info a{
+    color: white;
+    font-size: 15px;
+}
+footer .upper .first .info a .icon{
+    margin-right: 10px;
+    color: #d10024;
+}
+footer .upper .item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .upper .item a{
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 15px;
+}
+footer .lower .debit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-block: 2px solid white;
+    padding-block: 30px;
+
+}
+footer .lower .debit .icon{
+    font-size: 40px;
+}
+footer .lower p{
+    color: rgba(255, 255, 255, 0.658);
+    text-align: center;
+    font-size: 12px;
+    margin-block: 10px;
+}
+footer .lower p span{
+    font-size: 15px;
+    color: blue;
+}
+
+/* Laptop page */
+/* 2nd page starts here */
+.front{
+    background-color: #d10024;
+    height: 195px;
+    position: relative;
+    z-index: -10;
+    /* box-shadow: 0px 8px 16px 0px #15161D; */
+    
+}
+.front .inner{
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 0 0 10px #d10024, 
+                0 0 0 20px white,
+                0 0 0 30px #d10024,
+                0 0 0 40px white;
+    height: 60px;
+    width: 60px;
+    border-top: none;
+    border-inline: 4px solid white;
+    position: absolute;
+    left: -30px;
+    top: 65px;
+    transform: rotate(-45deg);
+    z-index: -9;
+}
+.front h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 72px;
+    left: 130px;
+    text-transform: uppercase;
+}
+.select{
+    margin-block: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.select .box{
+    width: 180px;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    text-align: center;
+    position: relative;
+}
+.select .box:hover{
+    border-bottom: none;
+    border-top: 2px solid #d10024;
+    border-left: 2px solid #d10024;
+    border-right: 2px solid #d10024;
+}
+.select .box .discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.select .box .discount p{
+    padding: 5px;
+    border: 2px solid #d10024;
+    color: #d10024;
+    font-size: 12px;
+}
+.select .box img{
+    height: 140px;
+    width: 100%;
+    margin-block: 15px;
+}
+.select .box .category{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+.select .box .category h4{
+    color: rgba(128, 128, 128, 0.705);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 100;
+}
+.select .box .category h3{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.select .box .category h3 span{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: -185px;
+    height: 200px;
+    text-align: center;
+    background-color: #d10023cc;
+    color: white;
+    font-size: 12px;
+    padding: 20px 5px;
+}
+.select .box .category h3:hover span{
+    display: block;
+}
+.select .box .category p{
+    color: #d10024;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.select .box .category p span{
+    color: gray;
+    font-weight: 100;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.select .box .category .rating{
+    position: absolute;
+    left: 58px;
+    top: 81px;
+    font-size: 15px;
+}
+.select .box .react{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 70px;
+    margin-top: 5px;
+    border-bottom: 2px solid #d10024;
+}
+.select .box .buy{
+    display: none;
+    height: 0;
+}
+.select .box .buy button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color: #d10024;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+.select .box .buy button:hover{
+    color: #d10024;
+    background-color: white;
+    border: 2px solid #d10024;
+}
+.select .box .buy button .buy-icon{
+    display: none;
+}
+.select .box .buy button:hover .buy-icon{
+    display: block;
+    transition: all 1s ease-in;
+}
+.select .box .buy button p{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.select .box:hover .buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #15161D;
+    margin-inline: 5px;
+    height: 70px;
+}
+.fill{
+    margin-bottom: 20px;
+    margin-inline: 13px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.fill .request{
+    padding-left: 4px;
+    border-left: 2px solid rgba(0, 0, 0, 0.13);
+    color: #15161D;
+    display: flex;
+    flex-direction: column;
+}
+.fill .request span{
+    font-size: 15px;
+    font-weight: 800;
+}
+.fill form{
+    background-color: #d10024;
+    border-radius: 40px;
+    height: 320px;
+    min-width: 280px;
+    padding: 25px;
+}
+.fill form input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.fill form .fname{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.fill form select{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.fill form .describe{
+    height: 80px;
+    padding-inline: 10px;
+}
+.fill form button{
+    padding: 10px 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #d10024;
+    border: 2px solid rgba(255, 255, 255, 0.233);
+    box-shadow: 0px 1px 16px 0px white;
+}
+.fill form button:hover{
+    background-color: white;
+    border: 2px solid #d10024;
+    box-shadow: none;
+}
+.fill .advert{
+    display: none;
+}
+
+/* Responsive View */
+@media only screen and (min-width: 450px) {
+    .Electro .logo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Electro .logo form #Select{
+        min-width: 150px;
+        position: relative;
+        left: 4px;
+    }
+    .Electro .logo form input{
+        min-width: 200px;
+        position: relative;
+        left: 0px;
+        bottom: 1px;
+    }
+    .Electro .logo form button{
+        min-width: 100px;
+        position: relative;
+        left: -3px;
+    }
+    .Electro .logo .your{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .new .box .category .rating{
+        left: 40%;
+    }
+    .selling .box .category .rating{
+        left: 40%;
+    }
+    footer .upper{
+        margin-block: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        color: white;
+    }
+    footer .upper .first{
+        width: 50%;
+    }
+    footer .upper .third{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 550px){
+    .Electro header .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: unset;
+        flex-wrap: wrap;
+    }
+    .Electro .logo form input{
+        min-width: 250px;
+        position: relative;
+        left: 0px;
+        bottom: 1px;
+    }
+    .Electro .logo .your{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .new .box .category .rating{
+        left: 42.5%;
+    }
+    .selling .box .category .rating{
+        left: 42.5%;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .Electro header .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Electro .logo form input{
+        min-width: 400px;
+        position: relative;
+        left: 0px;
+        bottom: 1px;
+    }
+    .new .box .category .rating{
+        left: 44%;
+    }
+    .selling .box .category .rating{
+        left: 44%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .Electro .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+        background-color: #15161D;
+        border-bottom: 3px solid #d10024;
+    }
+    .Electro .logo .form{
+        margin-top: 20px;
+    }
+    .Electro .logo form #Select{
+        position: relative;
+        left: 5px;
+    }
+    .Electro .logo form button{
+        height: 40px;
+        min-width: 100px;
+        position: relative;
+        left: -5px;
+    }
+    .new .box .category .rating{
+        left: 45.5%;
+    }
+    .selling .box .category .rating{
+        left: 45.5%;
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .Electro .logo .your .menu{
+        display: none;
+    }
+    .Electro .logo form input{
+        min-width: 300px;
+        position: relative;
+        left: 0px;
+        bottom: 1px;
+    }
+    .Electro .logo{
+        padding-block: 10px 25px;
+    }
+    .Electro .logo .your{
+        margin-top: 15px;
+    }
+    .fullscreen{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 30px;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.192);
+        padding-left: 20px;
+    }
+    .fullscreen a{
+        color: #15161D;
+    }
+    .fullscreen a:hover{
+        color: #d10024;
+        border-bottom: 2px solid #d10024;
+    }
+    .fullscreen .active{
+        color: #d10024;
+        border-bottom: 2px solid #d10024;
+    }
+    .new .box .category .rating{
+        left: 46%;
+    }
+    .selling .box .category .rating{
+        left: 46%;
+    }
+}
+
+@media only screen and (min-width: 1080px){
+    .top{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer{
+        width: 100%;
+        background-color: #15161D;
+        border-top: 2px solid #d10024;
+        border-bottom: 2px solid white;
+        border-inline: 1px solid white;
+        padding-inline: 20px;
+    }
+    footer .upper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0px;
+        margin-inline: 30px;
+    }
+    footer .upper .first p{
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    footer .upper .first{
+        width: 25%;
+    }
+    footer .upper .second{
+        width: 25%;
+    }
+    footer .upper .third{
+        width: 25%;
+    }
+    footer .upper .fourth{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1350px){
+    .new .box .category .rating{
+        left: 615px;
+    }
+    .selling .box .category .rating{
+        left: 615px;
+    }
+}

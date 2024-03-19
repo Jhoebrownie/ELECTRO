@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRO | HOME</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="Electro">
+        <header>
+            <div class="nav-links" id="mobile">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Hot Deals</a>
+                <a href="#">Categories</a>
+                <a href="laptop.html">Laptops</a>
+                <a href="#">Smartphones</a>
+                <a href="#">Cameras</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="info">
+                <div class="r-info">
+                    <a href="#"><i class="fa-solid fa-phone icon"></i> +234-8054904314</a>
+                    <a href="#"><i class="fa-regular fa-envelope icon"></i>Besongjoe@gmail.com</a>
+                    <a href="#"><i class="fa-solid fa-location-dot icon"></i>51, Onabor street, Benin-city.</a>
+                </div>
+                <div class="l-info">
+                    <a href="#"><i class="fa-solid fa-dollar-sign icon"></i>USD</a>
+                    <a href="#"><i class="fa-regular fa-user icon"></i>My Account</a>
+                </div>
+            </div>
+            <div class="logo">
+                <h1><span>E</span>lectro<span>.</span></h1>
+                <div class="form">
+                    <form action="search">
+                        <select name="select" id="Select">
+                            <option value="All categories">All Categories</option>
+                            <option value="cate 1">Category 01</option>
+                            <option value="cate 2">Category 02</option>
+                        </select>
+                        <input type="search" name="Search" placeholder="Search here">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <div class="your">
+                    <a href="#">
+                        <h4 class="wish">2</h4>
+                        <i class="fa-regular fa-heart heart"></i>
+                        <p>Your Wishlist</p>
+                    </a>
+                    <a href="#">
+                        <h4 class="cart">3</h4>
+                        <i class="fa-solid fa-cart-arrow-down heart"></i>
+                        <p>Your Cart</p>
+                    </a>
+                    <nav class="menu" onclick="openNav()">
+                        <i class="fa-solid fa-bars heart"></i>
+                        <p>Menu</p>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="fullscreen">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Hot Deals</a>
+            <a href="#">Categories</a>
+            <a href="laptop.html">Laptops</a>
+            <a href="#">Smartphones</a>
+            <a href="#">Cameras</a>
+            <a href="#">Accessories</a>
+        </div>
+        <section class="cards">
+            <div class="collect">
+                <img src="Img/laptop-with-colorful-screen-gray-background-3d-rendering.jpg" alt="">
+                <div class="shop">
+                    <h2>Laptop <br> Collection</h2>
+                    <p>SHOP NOW <a href="laptop.html">&RightArrow;</a></p>
+                </div>
+            </div>
+            <div class="collect">
+                <img src="Img/shop03.png.webp" alt="">
+                <div class="shop">
+                    <h2>Accesories <br> Collection</h2>
+                    <p>SHOP NOW <a href="#">&RightArrow;</a></p>
+                </div>
+            </div>
+            <div class="collect">
+                <img src="Img/shop02.png.webp" alt="">
+                <div class="shop">
+                    <h2>Cameras <br> Collection</h2>
+                    <p>SHOP NOW <a href="#">&RightArrow;</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="new">
+            <h2>New Products</h2>
+            <div class="p-items">
+                <a href="javascript:void(0)" onclick="show()" class="laptop">Laptops</a>
+                <a href="javascript:void(0)" class="phones">Smartphones</a>
+                <a href="javascript:void(0)" class="cam">Cameras</a>
+                <a href="javascript:void(0)" class="access">Accessories</a>
+            </div>
+            <div class="slideshow-container">
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product007.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product09.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product07.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product01.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product02.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+                        <p>30%</p>
+
+                    </div>
+                    <img src="Img/product03.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hot">
+            <div class="times">
+                <div class="time">
+                    <h3 class="day">0</h3>
+                    <p>Days</p>
+                </div>
+                <div class="time">
+                    <h3 class="hour">0</h3>
+                    <p>Hours</p>
+                </div>
+                <div class="time">
+                    <h3 class="min">0</h3>
+                    <p>Mins</p>
+                </div>
+                <div class="time">
+                    <h3 class="sec">0</h3>
+                    <p>Secs</p>
+                </div>
+            </div>
+            <div class="deal">
+                <h2>Hot Deal This Week</h2>
+                <p>New Collection Up To 50% Off</p>
+                <button>Shop Now</button>
+            </div>
+        </section>
+        <section class="selling">
+            <h2>Top Selling</h2>
+            <div class="p-items">
+                <a href="javascript:void(0)" onclick="show()" class="laptop">Laptops</a>
+                <a href="#" class="phones">Smartphones</a>
+                <a href="#" class="cam">Cameras</a>
+                <a href="#" class="access">Accessories</a>
+            </div>
+            <div class="slideshow-containers">
+                <div class="box fades">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product02.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fades">
+                    <div class="discount">
+                        <p>30%</p>
+
+                    </div>
+                    <img src="Img/product03.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div id="buy" class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fades">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product01.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product007.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <div class="discount">
+    
+                    </div>
+                    <img src="Img/product09.png.webp" alt="">
+                    <div class="category">
+                        <h4>Category</h4>
+                        <h3>Product Name Goes Here</h3>
+                        <p>$980.00 <span>$999.00</span></p>
+                        <p class="rating">&starf;&starf;&starf;&starf;&star;</p>
+                    </div>
+                    <div class="react">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="buy">
+                        <button>
+                            <i class="fa-solid fa-cart-arrow-down buy-icon"></i>
+                            <p>Add To Cart</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top">
+            <div class="mini up">
+                <h3>Top Selling</h3>
+                <li>
+                    <img src="Img/product01.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="Img/product02.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="Img/product03.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+            </div>
+            <div class="mini mid">
+                <h3>Top Selling</h3>
+                <li>
+                    <img src="Img/product09.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="Img/product08.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="Img/product07.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+            </div>
+            <div class="mini down">
+                <h3>Top Selling</h3>
+                <li>
+                    <img src="Img/product04.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="Img/product06.png.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="Img/product007.webp" alt="">
+                    <div>
+                        <h5>Category</h5>
+                        <h4>Product Name Goes Here</h4>
+                        <p>$980.00 <span>$999.00</span></p>
+                    </div>
+                </li>
+            </div>
+        </section>
+        <section class="newsletter">
+            <nav>
+                <i class="fa-regular fa-envelope"></i>
+            </nav>
+            <h3>Sign Up for the <span>Newsletter</span></h3>
+            <form action="send" method="post">
+                <input type="email" name="email" placeholder="Enter Your Email">
+                <button><i class="fa-solid fa-envelope"></i> Subscribe</button>
+            </form>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f icon"></i>
+                <i class="fa-brands fa-x-twitter icon"></i>
+                <i class="fa-brands fa-instagram icon"></i>
+                <i class="fa-brands fa-pinterest icon"></i>
+            </div>
+        </section>
+        <footer>
+            <div class="upper">
+                <div class="first">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quo! Rerum repellat eligendi magni.</p>
+                    <div class="info">
+                        <a href="#"><i class="fa-solid fa-phone icon"></i> +234-8054904314</a>
+                        <a href="#"><i class="fa-regular fa-envelope icon"></i>Besongjoe@gmail.com</a>
+                        <a href="#"><i class="fa-solid fa-location-dot icon"></i>51, Onabor street, Benin-city.</a>
+                    </div>
+                </div>
+                <div class="second">
+                    <h2>Categories</h2>
+                    <div class="item">
+                        <a href="#">Hot Deals</a>
+                        <a href="#">Laptops</a>
+                        <a href="#">Smartphones</a>
+                        <a href="#">Cameras</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                </div>
+                <div class="third">
+                    <h2>Information</h2>
+                    <div class="item">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Orders and Returns</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="fourth">
+                    <h2>Service</h2>
+                    <div class="item">
+                        <a href="#">My Account</a>
+                        <a href="#">View Cart</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Track My Order</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="debit">
+                    <i class="fa-brands fa-cc-visa icon"></i>
+                    <i class="fa-solid fa-credit-card icon"></i>
+                    <i class="fa-brands fa-cc-paypal icon"></i>
+                    <i class="fa-brands fa-cc-mastercard icon"></i>
+                    <i class="fa-brands fa-cc-discover icon"></i>
+                    <i class="fa-brands fa-cc-apple-pay icon"></i>
+                </div>
+                <p>Copyright &copy;2024 All rights reserved | This template is made with &hearts; by <span>JhoeBrownie</span></p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <!-- javascript -->
+    <script src="script.js"></script>    
+</body>
+</html>
+
+<!-- <i class="fa-regular fa-user"></i>
+<i class="fa-regular fa-heart"></i>
+<i class="fa-solid fa-dollar-sign"></i>
+<i class="fa-solid fa-cart-arrow-down"></i>
+<i class="fa-solid fa-eye"></i>
+<i class="fa-solid fa-right-left"></i>
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-solid fa-phone"></i>
+<i class="fa-solid fa-location-dot"></i>
+<i class="fa-solid fa-box-archive"></i>
+<i class="fa-solid fa-building"></i>
+<i class="fa-solid fa-users"></i>
+<i class="fa-regular fa-face-smile"></i>
+<i class="fa-regular fa-bars"></i>
+<i class="fa-solid fa-quote-right"></i>
+
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-x-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-pinterest"></i> -->
+
+
